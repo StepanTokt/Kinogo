@@ -1,0 +1,123 @@
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Оформление карточки */
+.card-item {
+    width: 320px;
+    cursor: pointer;
+   
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.card-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Внутренний контейнер карточки */
+.card-item__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Изображение в карточке */
+.card-img {
+    width: 100%;
+    
+    border-radius: 16px 16px 0px 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* Текст в карточке */
+.card-text {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+
+.name {
+    color:rgb(196, 170, 22);
+    font-size: 18px;
+    margin-right: 7px;
+   
+}
+
+.year{
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 1500px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1100px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .card-item {
+        width: 250px;
+    }
+}
+
+.active {
+    background-color: rgb(228, 179, 19);
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.pagination button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.notActive{
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+
+.pagination button:last-child {
+    margin-right: 0px; /* Используем :last-child вместо nth-last-child */
+}
+
+.pagination button:hover {
+    background-color: rgb(238, 212, 127);
+}
+
+.current_link{
+    text-decoration: none;
+    color: black
+}
+
+

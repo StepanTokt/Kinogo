@@ -1,0 +1,154 @@
+
+.itemPageBlock{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.itemPage__flexbox{
+    display: flex;
+    justify-content: center;
+}
+
+.itemImg{
+    margin-right: 75px;
+    max-width: 450px;
+
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header__flexbox-rightSide{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.header__flexbox-rightSide p{
+    margin-bottom: 20px;
+}
+
+.beansItemPage{
+    margin: 0 auto 25px;
+    width: 250px;
+}
+
+.span{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.contry, .description, .duration{
+    margin-bottom: 20px;
+    max-width: 440px;
+}
+
+.spanRating, .spanYear, .spanDescription, .spanDuration{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.spanRating{
+    margin-right: 5px;
+}
+
+.spanMr{
+    margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+    .itemPageBlock{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .description{
+        text-align: justify;
+    }
+
+    .itemPage__flexbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+       
+    }
+    .itemImg{
+        margin: 0 auto;
+    }
+
+    .contry, .description, .duration{
+        margin: 0 auto;
+    }
+
+    .year{
+        margin: 0 auto;
+    }
+
+    /* .flexbox-rightSide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center  ;
+    } */
+}
+@media (max-width: 640px) {
+    .itemImg{
+        width: 250px;
+    }
+
+    iframe{
+        width: 270px;
+    }
+
+    .imgSection{
+        width: 270px;
+    }
+
+    .imgSection img {
+        width: 200px;
+      
+      }
+}
+
+.movieName{
+    font-size: 36px;
+    color:goldenrod
+}
+
+.trailer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+iframe{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.h2_trailer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.imgSection {
+    margin: 0 auto; /* центрирование карусели */
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .imgSection img {
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+  }
+  
+  .images-title{
+    font-size: 38px;
+  }
+
+  .slider{
+    margin-top: 30px;
+  }

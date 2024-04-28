@@ -1,0 +1,169 @@
+
+.header{
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background-color: rgb(0, 0, 0); */
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    color:rgb(255, 255, 255);
+ 
+}
+
+.header__block{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__block input{
+    border-radius: 16px;
+    width: 350px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header__block input:active,
+.header__block input:focus {
+    border: none;
+    outline: none;
+    color: #59a1d1;
+    font-size: 18px;
+}
+
+
+
+
+
+.header__block input::placeholder{
+    padding-left: 15px;
+}
+
+.movie_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text__block h1{
+    text-align: center;
+    font-family: Merienda;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff; 
+  
+}
+
+.text__block h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text__block p{
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Merienda;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff
+}
+
+.more{
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+.more:hover{
+    background-color: #e98a0e;
+    border: none;
+}
+
+@media (max-width: 900px) {
+    .header__block{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__block input{
+        width: 150px;
+    }
+
+    .text__block h1{
+        font-size: 24px;
+
+    }
+}
+
+.header__block {
+    position: relative;
+}
+
+.movie_icon {
+    position: relative; /* Добавляем позиционирование */
+}
+
+.dropdown-menu {
+    color:black;
+    position: absolute; /* Устанавливаем абсолютное позиционирование */
+    top: 100%; /* Размещаем меню под инпутом */
+    right: 0; /* Размещаем меню слева */
+    z-index: 999; /* Устанавливаем z-index, чтобы оно было поверх других элементов */
+    background-color: white; /* Добавляем белый фон */
+    border: 1px solid #ccc; /* Добавляем границу для стиля */
+    border-top: none; /* Убираем верхнюю границу, чтобы не было двойных границ */
+    width: 85%; /* Ширина по размеру родительского блока */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+    display: none; /* Изначально скрываем меню */
+    border:none;
+    border-radius: 16px;
+    margin-top: 1px;
+    padding-top: 10px;
+   
+}
+
+.movie_icon:hover .dropdown-menu {
+    display: block; /* Показываем меню при наведении на иконку */
+}
+
+
+.header_card-item{
+    box-shadow: 0 2px 4px rgba(220, 26, 201, 0.1);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto 10px;
+  
+  
+}
+
+.header_card-item:last-child{
+    margin-bottom: 0;
+}
+
+.header_card-img{
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 16px;
+}
+
+.header_card-item__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_name{
+    margin-right: 10px;
+}
