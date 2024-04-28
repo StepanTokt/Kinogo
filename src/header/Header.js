@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect, useMemo } from 'react';
 import Service from '../service/Service';
 import setContent from '../utils/setContent';
-
+import searchLoading from '../img/Searching.gif'
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [name, setName] = useState('')
@@ -23,9 +23,12 @@ const Header = () => {
     };
     const handleSubmit = (event) => {
         event.preventDefault();
+        
         if(name != '') {
-            updateMovies(name)
             setShowMenu(true);
+            updateMovies(name)
+            
+           
         }
     };
 
@@ -71,10 +74,18 @@ const Header = () => {
 
                         <form onSubmit={handleSubmit}>
                             <input type="text" name="" id="" placeholder="Input movie's name and press Enter" onChange={(e) => setName(e.target.value)}/>
+                            
+                          
                             {movies.length != 0 ?
                                 <div className="dropdown-menu">
                                      {elements}
-                                </div> : null}
+                                </div> : 
+                                showMenu ? 
+                                    <div className="dropdown-menu">
+                                        <img src={searchLoading} alt="" />
+                                    </div> 
+                                    : null
+                                }
                             
                         </form>
                     </div>

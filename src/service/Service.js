@@ -190,32 +190,41 @@ const Service = () => {
       ]
 
     const getMovies = async(page=1) => {
-      const res = await request(`${_http}movie?page=${page}&limit=8&isSeries=false`)
+          const res = await request(`${_http}movie?page=${page}&limit=8&isSeries=false`)
       return res.docs.map(_transformMovies)      
     }
 
     const getSeries = async(page=1) => {
+      // return obj
+
         const res = await request(`${_http}movie?page=${page}&limit=8&isSeries=true`)
         return res.docs.map(_transformMovies)
     }
 
     const getMovie = async(id) => {
+      // return movie
+
         const res = await request(`${_http}movie/${id}`)
         return _transformMovie(res)          
     }
 
     const getMovieBySearch = async(name) => {
+      // return search
         const res = await request(`${_http}movie/search?limit=3&query=${name}`)
         return res.docs.map(_transformMovies)
     }
 
     const getTop5 = async() => {
+      //return top5
+
         const res = await request(`${_http}movie?page=1&limit=3`)
         return res.docs.map(_transformMovies)
     }
 
 
     const getImages = async(id) => {
+      //return img
+
         const res = await request(`${_http}image?page=1&limit=10&selectFields=url&movieId=${id}`)
         return res.docs
     }

@@ -1,9 +1,9 @@
-
+import loading from '../img/Filling ring.gif'
 
 const Spinner = () => {
     return(
         <div className="spinner">
-            <p>Loading...</p>
+            <img src={loading} alt="" />
         </div>
     )
 }
