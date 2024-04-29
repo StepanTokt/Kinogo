@@ -109,21 +109,21 @@
 }
 
 .movie_icon {
-    position: relative; /* Добавляем позиционирование */
+    position: relative; 
 }
 
 .dropdown-menu {
     color:black;
-    position: absolute; /* Устанавливаем абсолютное позиционирование */
-    top: 100%; /* Размещаем меню под инпутом */
-    right: 0; /* Размещаем меню слева */
-    z-index: 999; /* Устанавливаем z-index, чтобы оно было поверх других элементов */
-    background-color: white; /* Добавляем белый фон */
-    border: 1px solid #ccc; /* Добавляем границу для стиля */
-    border-top: none; /* Убираем верхнюю границу, чтобы не было двойных границ */
-    width: 85%; /* Ширина по размеру родительского блока */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляем тень */
-    display: none; /* Изначально скрываем меню */
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    z-index: 999; 
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-top: none; 
+    width: 85%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none; 
     border:none;
     border-radius: 16px;
     margin-top: 1px;
@@ -132,7 +132,7 @@
 }
 
 .movie_icon:hover .dropdown-menu {
-    display: block; /* Показываем меню при наведении на иконку */
+    display: block; 
 }
 
 

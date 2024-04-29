@@ -5,7 +5,7 @@
     justify-items: center;
 }
 
-/* Оформление карточки */
+
 .card-item {
     width: 320px;
     cursor: pointer;
@@ -20,7 +20,7 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Внутренний контейнер карточки */
+
 .card-item__inner {
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@
 }
 
 .pagination button:last-child {
-    margin-right: 0px; /* Используем :last-child вместо nth-last-child */
+    margin-right: 0px; 
 }
 
 .pagination button:hover {
